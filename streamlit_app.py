@@ -10,9 +10,8 @@ st.title('🎧 Audio -> Text')
 st.caption('Upload an mp3 file and get the text from it!') 
 
 
-st.sidebar.subheader("Enter Your API Key 🗝️")
 open_api_key = st.sidebar.text_input(
-    "Open API Key", 
+    "Enter Your OpenAI API Key 🗝️",
     value=st.session_state.get('open_api_key', ''),
     help="Get your API key from https://openai.com/",
     type='password'
